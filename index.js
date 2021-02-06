@@ -47,3 +47,10 @@ var Color2;
 })(Color2 || (Color2 = {}));
 console.log(Color2.Red, Color2.Green, Color2.Blue);
 console.log(Color2[2]);
+// 字符串枚举成员不会自增长，每个成员都必须被初始化。另外，字符串枚举不会为成员生成反向映射。
+var Color3;
+(function (Color3) {
+    Color3["Red"] = "REDs";
+    Color3["Green"] = "Green";
+    Color3["Blue"] = "Blue";
+})(Color3 || (Color3 = {}));
