@@ -113,3 +113,12 @@ function sum(...args: number[]):number {
     return args.reduce((pre, cur) => pre + cur)
 }
 console.log(sum(1,2,3))  // => 6
+
+// 接口中的方法
+interface Animal {
+    say(text: string): void
+}
+
+interface AnimalB {
+    say: (text:string) => void
+}
