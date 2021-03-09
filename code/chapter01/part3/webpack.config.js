@@ -16,7 +16,11 @@ module.exports = {
     // 指定打包文件的目录
     path: path.resolve(__dirname, 'dist'),
     // 打包后文件的名字
-    filename: "bundle.js"
+    filename: "bundle.js",
+    // 告诉webpack不使用箭头函数
+    environment: {
+      arrowFunction: false
+    }
   },
 
   // 指定webpack打包时要使用模块
@@ -43,7 +47,7 @@ module.exports = {
                   // 配置信息
                   {
                     // 要兼容的目标浏览器
-                    target: {"chrome": "88"},
+                    target: "> 5%",
                     // 指定corejs的版本
                     "corejs": "3",
                     // 使用corejs的方式  "usage" 表示 按需加载
