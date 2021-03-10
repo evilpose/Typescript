@@ -14,7 +14,7 @@ class Dog{
   bark(){
     // alert('汪汪汪！');
     // 在方法中可以通过this表示当前调用方法的对象
-    console.log(this.name)
+    console.log(this.name);
   };
 
 }
